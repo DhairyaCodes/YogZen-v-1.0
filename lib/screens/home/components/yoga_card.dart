@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:yogzen_v_1/global/color.dart';
 
-import 'package:yogzen_v_1/screens/home/home.dart';
+import '../../yoga/yoga_tutorial.dart';
+// import 'package:yogzen/global/color.dart';
+// import 'package:yogzen/screens/yoga/yoga_tutorial.dart';
+// import 'package:yogzen/screens/home/home.dart';
 
 class YogaCard extends StatelessWidget {
   final String postYoga;
   final String des;
   final String url;
-  final List steps;
+  final String name;
 
   const YogaCard(
-      {required this.postYoga, required this.des, required this.url, required this.steps});
+      {required this.postYoga, required this.des, required this.url, required this.name});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigator.of(context).push(MaterialPageRoute(
-        //   builder: ((context) =>
-        //       YogaTutorial(url: url, steps: steps, des: des)),
-        // ));
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: ((context) =>
+              YogaTutorial(url: url, name: name, des: des)),
+        ));
       },
       child: Container(
         padding: EdgeInsets.only(right: 16),

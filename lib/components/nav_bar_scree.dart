@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:yogzen_v_1/components/nav_bar.dart';
 import 'package:yogzen_v_1/screens/community/community_screen.dart';
 import 'package:yogzen_v_1/screens/home/home.dart';
+import 'package:yogzen_v_1/screens/specific_needs/specific_needs.dart';
 
 class NavScreen extends StatefulWidget {
   static const routeName = "/tabScreen";
@@ -15,11 +16,7 @@ class NavScreen extends StatefulWidget {
 class _NavScreenState extends State<NavScreen> {
   final _pages = [
     HomeScreen(),
-    Scaffold(
-      body: Center(
-        child: Text("Specific Needs"),
-      ),
-    ),
+    SpecificNeeds(),
     CommunityScreen(),
     Scaffold(
       body: Center(

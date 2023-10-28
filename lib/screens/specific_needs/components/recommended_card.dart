@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:yogzen_v_1/global/color.dart';
-import 'package:yogzen_v_1/screens/yoga/yoga_tutorial.dart';
-import 'package:yogzen_v_1/screens/home/home.dart';
+
+import '../../yoga/yoga_tutorial.dart';
+// import 'package:yogzen/global/color.dart';
+// import 'package:yogzen/screens/yoga/yoga_tutorial.dart';
+// import 'package:yogzen/screens/home/home.dart';
 
 class RecommendedCard extends StatelessWidget {
   final String postYoga;
   final String des;
   final String url;
-  final List steps;
+  final String name;
 
   RecommendedCard(
-      {required this.postYoga, required this.des, required this.url, required this.steps});
+      {required this.postYoga, required this.des, required this.url, required this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class RecommendedCard extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
           builder: ((context) => YogaTutorial(
-                steps: steps,
+                name: name,
                 url: url,
                 des: des,
               )),
