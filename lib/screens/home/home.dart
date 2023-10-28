@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:yogzen_v_1/global/color.dart';
-import 'package:yogzen_v_1/screens/user_profile/user_page.dart';
+
 
 import 'components/yoga_card.dart';
 
