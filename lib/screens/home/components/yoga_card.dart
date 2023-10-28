@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yogzen_v_1/global/color.dart';
-import 'package:yogzen_v_1/screens/yoga/yoga_tutorial.dart';
+
 import 'package:yogzen_v_1/screens/home/home.dart';
 
 class YogaCard extends StatelessWidget {
@@ -16,10 +16,10 @@ class YogaCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: ((context) =>
-              YogaTutorial(url: url, steps: steps, des: des)),
-        ));
+        // Navigator.of(context).push(MaterialPageRoute(
+        //   builder: ((context) =>
+        //       YogaTutorial(url: url, steps: steps, des: des)),
+        // ));
       },
       child: Container(
         padding: EdgeInsets.only(right: 16),
