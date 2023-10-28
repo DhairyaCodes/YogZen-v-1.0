@@ -1,3 +1,4 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yogzen_v_1/components/nav_bar_scree.dart';
@@ -5,7 +6,11 @@ import 'package:yogzen_v_1/global/color.dart';
 import 'package:yogzen_v_1/screens/home/home.dart';
 import 'package:yogzen_v_1/screens/welcome/welcome.dart';
 
-void main() {
+List<CameraDescription>? cameras;
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  cameras = await availableCameras();
   runApp(const MyApp());
 }
 
@@ -41,7 +46,7 @@ class MyApp extends StatelessWidget {
       routes: {
         NavScreen.routeName: (context) => NavScreen(),
       },
-      home: HomeScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
