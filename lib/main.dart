@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yogzen_v_1/global/color.dart';
+import 'package:yogzen_v_1/welcome/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
               color: kblackHeading,
             ),
           )),
-      home: const Scaffold(),
+      home: WelcomeScreen(),
     );
   }
 }
