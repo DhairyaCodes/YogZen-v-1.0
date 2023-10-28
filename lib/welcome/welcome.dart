@@ -50,10 +50,6 @@ class WelcomeScreen extends StatelessWidget {
                   child: Text('Get Started'),
                 ),
               ),
-              GestureDetector(
-                onTap: () {},
-                child: Container(),
-              ),
             ],
           )
         ]));
