@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yogzen_v_1/components/nav_bar_scree.dart';
 import 'package:yogzen_v_1/global/color.dart';
+import 'package:yogzen_v_1/screens/camera/camera.dart';
+import 'package:yogzen_v_1/screens/community/yog_guru.dart';
 import 'package:yogzen_v_1/screens/home/home.dart';
 import 'package:yogzen_v_1/screens/welcome/welcome.dart';
 
@@ -45,6 +47,8 @@ class MyApp extends StatelessWidget {
           )),
       routes: {
         NavScreen.routeName: (context) => NavScreen(),
+        YogGuru.routeName: (context) => YogGuru(),
+        Camera.routeName: (context) => Camera(),
       },
       home: WelcomeScreen(),
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:yogzen_v_1/components/nav_bar.dart';
+import 'package:yogzen_v_1/screens/community/community_screen.dart';
 import 'package:yogzen_v_1/screens/home/home.dart';
 
 class NavScreen extends StatefulWidget {
@@ -19,11 +20,7 @@ class _NavScreenState extends State<NavScreen> {
         child: Text("Specific Needs"),
       ),
     ),
-    Scaffold(
-      body: Center(
-        child: Text("Community"),
-      ),
-    ),
+    CommunityScreen(),
     Scaffold(
       body: Center(
         child: Text("User Profile"),
