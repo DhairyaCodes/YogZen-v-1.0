@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yogzen_v_1/components/nav_bar_scree.dart';
 import 'package:yogzen_v_1/global/color.dart';
-import 'package:yogzen_v_1/welcome/welcome.dart';
+import 'package:yogzen_v_1/screens/home/home.dart';
+import 'package:yogzen_v_1/screens/welcome/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
       routes: {
         NavScreen.routeName: (context) => NavScreen(),
       },
-      home: WelcomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
