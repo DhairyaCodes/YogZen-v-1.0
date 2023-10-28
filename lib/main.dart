@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:yogzen_v_1/components/nav_bar_scree.dart';
 import 'package:yogzen_v_1/global/color.dart';
 import 'package:yogzen_v_1/screens/camera/camera.dart';
+import 'package:yogzen_v_1/screens/community/studio.dart';
 import 'package:yogzen_v_1/screens/community/yog_guru.dart';
 import 'package:yogzen_v_1/screens/home/home.dart';
 import 'package:yogzen_v_1/screens/specific_needs/specific_needs.dart';
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
       routes: {
         NavScreen.routeName: (context) => NavScreen(),
         YogGuru.routeName: (context) => YogGuru(),
+        YogaStudio.routeName: (context) => YogaStudio(),
         // Camera.routeName: (context) => Camera(),
         SpecificNeeds.routeName: (context) => SpecificNeeds(),
       },

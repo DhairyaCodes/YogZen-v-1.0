@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yogzen_v_1/global/color.dart';
+import 'package:yogzen_v_1/screens/community/studio.dart';
 
 class YogGuru extends StatelessWidget {
   static const routeName = "/yogGuruScreen";
@@ -83,22 +84,27 @@ class YogGuru extends StatelessWidget {
           Spacer(),
           Align(
             alignment: Alignment.bottomLeft,
-            child: Container(
-              margin: EdgeInsets.only(left: 16, bottom: 16),
-              height: 55,
-              width: 200,
-              child: Center(
-                child: Text(
-                  "Go to Studio",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, YogaStudio.routeName);
+              },
+              child: Container(
+                margin: EdgeInsets.only(left: 20, bottom: 50),
+                height: 55,
+                width: 200,
+                child: Center(
+                  child: Text(
+                    "Go to Studio",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
                   ),
                 ),
-              ),
-              decoration: BoxDecoration(
-                color: kdarkBlue,
-                borderRadius: BorderRadius.circular(15),
+                decoration: BoxDecoration(
+                  color: kdarkBlue,
+                  borderRadius: BorderRadius.circular(15),
+                ),
               ),
             ),
           ),

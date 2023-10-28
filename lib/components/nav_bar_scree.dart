@@ -4,6 +4,7 @@ import 'package:yogzen_v_1/components/nav_bar.dart';
 import 'package:yogzen_v_1/screens/community/community_screen.dart';
 import 'package:yogzen_v_1/screens/home/home.dart';
 import 'package:yogzen_v_1/screens/specific_needs/specific_needs.dart';
+import 'package:yogzen_v_1/screens/user_profile/user_page.dart';
 
 class NavScreen extends StatefulWidget {
   static const routeName = "/tabScreen";
@@ -18,11 +19,7 @@ class _NavScreenState extends State<NavScreen> {
     HomeScreen(),
     SpecificNeeds(),
     CommunityScreen(),
-    Scaffold(
-      body: Center(
-        child: Text("User Profile"),
-      ),
-    ),
+    userPageScreen(),
   ];
 
   var _selected = 0;
