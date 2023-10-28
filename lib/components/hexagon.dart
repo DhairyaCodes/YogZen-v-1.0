@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:yogzen_v_1/global/color.dart';
+import 'package:yogzen_v_1/screens/camera/camera.dart';
 
 class HexagonClipper extends CustomClipper<Path> {
   @override
@@ -28,12 +29,10 @@ class HexagonClipper extends CustomClipper<Path> {
 }
 
 class HexagonWidget extends StatelessWidget {
-  
   // final ImagePicker _picker = ImagePicker();
   // Future<void> _openCamera() async {
   //   final  pickedFile = await _picker.pickImage(source: ImageSource.camera);
   // }
-
 
   @override
   Widget build(BuildContext context) {
@@ -44,16 +43,13 @@ class HexagonWidget extends StatelessWidget {
           color: kdarkBlue,
           boxShadow: [
             BoxShadow(
-              offset: Offset(0, 4),
-              blurRadius: 4,
-              color: Colors.black12
-            ),
+                offset: Offset(0, 4), blurRadius: 4, color: Colors.black12),
           ],
         ),
         height: 68, // Set the height of your hexagon here
         child: IconButton(
-          onPressed: (){
-            
+          onPressed: () {
+            Navigator.pushNamed(context, Camera.routeName);
           },
           icon: Icon(
             Icons.camera,

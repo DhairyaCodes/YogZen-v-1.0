@@ -39,6 +39,7 @@ dependencies:
   font_awesome_flutter: ^10.6.0
   flutter_advanced_drawer: ^1.3.5
   youtube_player_flutter: ^8.1.2
+  camera: ^0.10.5+5
 
 dev_dependencies:
   flutter_test:

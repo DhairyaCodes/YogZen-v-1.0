@@ -32,7 +32,7 @@ class WelcomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              Image.asset('assets/yoga/welcome.png'),
+              Image.asset('assets/welcome.png'),
               const SizedBox(
                 height: 50,
               ),
