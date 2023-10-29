@@ -49,7 +49,7 @@ class HexagonWidget extends StatelessWidget {
         height: 68, // Set the height of your hexagon here
         child: IconButton(
           onPressed: () {
-            // Navigator.pushNamed(context, Camera.routeName);
+            Navigator.pushNamed(context, Camera.routeName);
           },
           icon: Icon(
             Icons.camera,
