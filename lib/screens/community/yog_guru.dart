@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:yogzen_v_1/global/color.dart';
-import 'package:yogzen_v_1/screens/community/studio.dart';
 
 class YogGuru extends StatelessWidget {
   static const routeName = "/yogGuruScreen";
@@ -85,9 +84,7 @@ class YogGuru extends StatelessWidget {
           Align(
             alignment: Alignment.bottomLeft,
             child: GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, YogaStudio.routeName);
-              },
+              onTap: () {},
               child: Container(
                 margin: EdgeInsets.only(left: 20, bottom: 50),
                 height: 55,
