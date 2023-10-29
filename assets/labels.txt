@@ -1,5 +1,4 @@
-0 Adho Mukha Shvanasana
-1 Utkata Konasana
-2 Phalakasana
-3 Vrikshasana
-4 Virabhadrasana
+0 Tadasana
+1  Trikonasana
+2 Bhujangasana
+3  Balasana
